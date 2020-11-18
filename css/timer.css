@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Roboto:400,100,300,500,700");
+#date-picker {
+  text-align: center;
+  margin: 70px auto 0;
+}
+#date-picker input#date-input {
+  width: 200px;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid #050505;
+  outline: none;
+}
+#date-picker #set-new-date {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+#date-picker span {
+  margin-top: 10px;
+  display: block;
+  color: #757575;
+}
+#countdown-timer {
+  text-align: center;
+  margin: 100px auto;
+}
+#countdown-timer h1 {
+  font-size: 50px;
+}
+#countdown-timer .invisible {
+  display: none;
+}
+#countdown-timer span {
+  display: inline-block;
+  width: 50px;
+  padding: 30px 15px;
+  margin: 5px;
+  background: #050505;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+}
