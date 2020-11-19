@@ -1122,7 +1122,9 @@ h2, h4, h6 {
     .nav-pills .show>.nav-link {
         border-radius: 7px;
         color: #4285f4 !important;
-        background: #f0f2f5;
+        background: #fff;
+        border: 2px solid;
+        padding: 6px 7px;
     }
     
     .login_reg_top_btn {
@@ -3393,7 +3395,7 @@ top: 237px;
     }
     
     .store_info_value {
-        font-size: 25px;
+        font-size: 21px;
         font-weight: 600;
     }
     
@@ -5165,4 +5167,13 @@ top: 237px;
     
     .category_filter_item_head.store #cat_search_all {
         background: #fff;
+    }
+    
+    .h5,
+    h5 {
+        font-size: 1.25rem!important;
+    }
+    
+    .product_dlivr_review_btn i::before {
+        font-size: 20px;
     }

@@ -23,12 +23,26 @@
         border-top: 0;
     }
     
-    #pills-tab,
     .store_nav_pills {
         white-space: nowrap;
         flex-wrap: nowrap;
         max-width: 100%;
         overflow-y: hidden;
+    }
+    
+    .product_show_tab {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        padding: 0;
+        margin: 0px -15px;
+        background: transparent;
+    }
+    
+    .product_show_tab a {
+        background: rgb(255, 255, 255);
+        margin-right: 10px;
+        border-radius: 7px;
     }
     
     .h1,
@@ -49,6 +63,7 @@
     
     #product_show_tab_link_id {
         font-size: 15px !important;
+        border-radius: 7px;
     }
     
     input,
@@ -117,7 +132,6 @@
     
     .fixed-header #main_search_bar {
         background: #fff;
-        border-radius: 7px !important;
     }
     
     #main_search_btn {
@@ -159,7 +173,7 @@
     }
     
     .product_price {
-        font-size: 17px;
+        font-size: 20px;
     }
     
     .product_card_name {
@@ -248,7 +262,7 @@
     .card_wrong_info_report h6 {
         margin: 0 !important;
         padding: 15px;
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .close_btn {
@@ -343,7 +357,7 @@
     }
     
     .btn {
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
     
     .cart_summery_info_price,
@@ -424,8 +438,8 @@
     .nav-pills .show>.nav-link {
         border-radius: 7px;
         color: #4285f4 !important;
-        background: #f0f2f5;
-        padding: 7px 10px;
+        background: #fff;
+        border: 2px solid;
     }
     
     .mobile-bottom-nav {
@@ -1263,7 +1277,7 @@
     
     .h5,
     h5 {
-        font-size: 16px;
+        font-size: 16px!important;
         font-weight: 600;
     }
     
@@ -1460,7 +1474,7 @@
     
     .delivery_option_info h6,
     .return_warranty_info h6 {
-        font-size: 13px;
+        font-size: 16px;
     }
     
     .text_about_delievry,
@@ -1896,7 +1910,7 @@
     
     .taka_sign::before {
         content: "\09f3";
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 600;
         margin-right: 2px;
         font-family: initial;
@@ -1907,7 +1921,7 @@
     }
     
     .pro_mobile_title {
-        font-size: 15px !important;
+        font-size: 16px !important;
         font-weight: 600 !important;
     }
     
@@ -2063,6 +2077,7 @@
     .product_detials_main_body {
         margin-right: -15px;
         margin-left: -15px;
+        margin-top: 7px;
     }
     
     .side_bar_customer_part.eight {
@@ -2320,7 +2335,7 @@
     }
     
     .main_top_cate_____View {
-        margin-top: 205px !important;
+        margin-top: 48% !important;
     }
     
     .main_cat_top_view_class .side_bar_customer_part {
@@ -2840,4 +2855,16 @@
     
     .icche_menu.list-group {
         box-shadow: unset;
+    }
+    
+    .breadcrumb {
+        display: none;
+    }
+    
+    .product_dlivr_review_btn {
+        margin-right: 30px;
+    }
+    
+    .nav-item.product_show_tab_item:first-child {
+        margin-left: 15px;
     }

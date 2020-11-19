@@ -145,6 +145,18 @@
     });
 
 
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 10) {
+            $('.search_bar_body').addClass('fixed-header');
+            $('.full_navbar_body').addClass('fixed_nav');
+            $('.search_result_body').addClass('scroll_search');
+        } else {
+            $('.search_bar_body').removeClass('fixed-header');
+            $('.full_navbar_body').removeClass('fixed_nav');
+            $('.search_result_body').removeClass('scroll_search');
+        }
+    });
+
     function getDetails() {
         $.ajax({
             type: 'POST',
@@ -909,18 +921,6 @@
         $('.user_mobile_menu').hide();
     });
 
-
-    $(window).scroll(function() {
-        if ($(window).scrollTop() >= 10) {
-            $('.search_bar_body').addClass('fixed-header');
-            $('.full_navbar_body').addClass('fixed_nav');
-            $('.search_result_body').addClass('scroll_search');
-        } else {
-            $('.search_bar_body').removeClass('fixed-header');
-            $('.full_navbar_body').removeClass('fixed_nav');
-            $('.search_result_body').removeClass('scroll_search');
-        }
-    });
 
     function userLoggedOut() {
         var url = '../auth/login.php';
