@@ -35,7 +35,7 @@
         flex-wrap: nowrap;
         overflow-y: hidden;
         padding: 0;
-        margin: 0px -15px;
+        margin: 0px -15px!important;
         background: transparent;
     }
     
@@ -64,6 +64,7 @@
     #product_show_tab_link_id {
         font-size: 15px !important;
         border-radius: 7px;
+        box-shadow: 0 1px 2px rgb(0, 0, 0, .2);
     }
     
     input,
@@ -1837,10 +1838,6 @@
         border-radius: 0;
     }
     
-    .recent_popular_tab_hm {
-        margin-top: 10px !important;
-    }
-    
     .big_category_view.card-columns,
     .todays_deals_view.card-columns,
     .premium_deals_view.card-columns,
@@ -2883,4 +2880,8 @@
     
     .login-box-msg-title {
         font-size: 20px;
+    }
+    
+    .nav-item.product_show_tab_item {
+        padding: 15px 0px;
     }
