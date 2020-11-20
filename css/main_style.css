@@ -1786,9 +1786,49 @@ h2, h4, h6 {
         content: "\2022";
         font-size: 45px;
         color: #4285f4;
+    }
+    
+    .bullet.bullet_unseen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .notify_item_per.bullet_unseen {
+        background: rgba(67, 135, 244, 0.16);
+        border-radius: 7px;
+        margin-bottom: 7px;
+    }
+    
+    .more_options_notifications {
+        position: relative;
+    }
+    
+    .more_icon_nofications {
         position: absolute;
-        right: 20px;
-        top: -34px;
+        right: -25px;
+        top: 0;
+        background: #eee;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+    }
+    
+    .bullet_unseen_div_main {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .more_icon_nofications i::before {
+        font-size: 19px;
+        color: rgb(68, 68, 68);
     }
     
     .bullet.bullet_click::before {
@@ -1801,10 +1841,6 @@ h2, h4, h6 {
     .msg-body-unix-ggg {
         display: flex;
         align-items: center;
-    }
-    
-    .notify_item_per.seen {
-        color: #7b7b7b!important;
     }
     
     .notify_item_per:last-child {

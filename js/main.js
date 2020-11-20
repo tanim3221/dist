@@ -2267,3 +2267,29 @@
             $('.url_copy_msg').hide();
         }, 3000);
     })
+
+    $(document).on('click', '.remove_notice', function(e) {
+        e.preventDefault();
+        var id = $(this).data('id');
+        var remove_notice = 'remove_notice';
+        console.log(id);
+        notifyDeleteUnread(remove_notice, id);
+    });
+
+    function notifyDeleteUnread(remove_notice, id) {
+        $.ajax({
+            type: 'GET',
+            url: '../customer/notified.php',
+            data: { remove_notice: remove_notice, id: id },
+            dataType: 'json',
+            success: function(response) {
+                if (response.error) {
+                    console.log('Error');
+                } else {
+                    console.log('Success');
+                    getDetailsEmptyFetchNotify();
+                    getNotification();
+                }
+            }
+        })
+    }
