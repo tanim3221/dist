@@ -530,7 +530,6 @@ h2, h4, h6 {
         color: 111 !important;
         border-color: #ddd;
         font-weight: 600;
-        border-bottom: 1px solid;
     }
     
     .icche_menu a:first-child {
@@ -2608,7 +2607,6 @@ top: 237px;
         background: #f9f9f9;
         color: #111 !important;
         border-color: #ddd;
-        border-bottom: 1px solid;
     }
     
     .icche_menu_about a:first-child {
@@ -3647,6 +3645,8 @@ top: 237px;
     .card-body.order_payment_form_var,
     .card-body.order_customer__.info_edit,
     .card-body.order_summery_write_review,
+    .card-body.about_us_page_heading,
+    .card-body.about_us_page_details,
     .order_summery_write_review_title_head .card-body {
         background: #fff;
         border-radius: 7px;
@@ -3657,8 +3657,14 @@ top: 237px;
     .cart_index_side.cat,
     .card.card-categories-ul-store,
     .card.card-categories-ul-cat,
+    .contact_details_view_for,
+    .faqs_all_accordion,
     .card.card-categories-ul-brand {
         margin-top: 15px;
+    }
+    
+    .about_us_page_heading .h5 {
+        margin: 0;
     }
     
     .order_summery_write_review_title_head .card-body {
@@ -4138,10 +4144,6 @@ top: 237px;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    
-    .body_customer_part.about {
-        margin-top: 10px;
     }
     
     .card-header.faq_title {
@@ -5236,4 +5238,8 @@ top: 237px;
     .login-box-msg-title {
         font-size: 25px;
         font-weight: 600;
+    }
+    
+    .list-group.icche_menu_about {
+        box-shadow: 0 1px 2px rgb(0, 0, 0, .2);
     }

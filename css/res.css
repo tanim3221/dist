@@ -2407,10 +2407,34 @@
     }
     
     .body_customer_part.about {
-        margin-top: 10px;
         padding: 0 !important;
-        background: #fff;
-        box-shadow: 0 1px 2px rgb(0, 0, 0, .2);
+        box-shadow: unset;
+    }
+    
+    .card-header.faq_title {
+        box-shadow: unset;
+    }
+    
+    .card-body.faq_details {
+        margin-top: 0;
+        border-radius: 0;
+        box-shadow: unset;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .list-group.icche_menu_about {
+        box-shadow: unset;
+    }
+    
+    .card-body.about_us_page_heading,
+    .card-header.faq_title,
+    #contact_us_form_icche,
+    .card-body.about_us_page_details {
+        border-radius: 0;
+    }
+    
+    .contact_details_view_for {
+        margin: 15px 0px !important;
     }
     
     #contact_us_form_icche {
@@ -2423,6 +2447,8 @@
     
     .contact_info_icche_side {
         padding: 30px 15px;
+        background: #fff;
+        margin-top: 15px;
     }
     
     .icche_menu_about a:last-child {
