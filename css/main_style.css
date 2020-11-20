@@ -3696,6 +3696,7 @@ top: 237px;
     .todays_deals_view a,
     .premium_deals_view a,
     .big_category_view .card,
+    .get_modified_info .card,
     .great_deals_view a {
         display: inline-block;
         width: 100%;
