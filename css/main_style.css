@@ -200,6 +200,14 @@
         position: absolute!important;
     }
     
+    .login-box._reset {
+        width: 65%;
+        top: 15px;
+        transform: translate(-50%);
+        padding: 35px;
+        position: relative;
+    }
+    
     .login-box,
     .register-box {
         position: absolute;
@@ -1118,13 +1126,16 @@ h2, h4, h6 {
         margin: 0 auto;
     }
     
+    .login_registration.reset {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
     .nav-pills .nav-link.active,
     .nav-pills .show>.nav-link {
-        border-radius: 7px;
+        border-radius: 0;
         color: #4285f4 !important;
-        background: #fff;
-        border: 2px solid;
-        padding: 6px 7px;
+        background: transparent;
     }
     
     .login_reg_top_btn {
@@ -3729,7 +3740,7 @@ top: 237px;
     
     .taka_sign_md::before {
         content: "\09f3";
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 600;
         margin-right: 3px;
         font-family: initial;
@@ -3737,7 +3748,7 @@ top: 237px;
     
     .taka_sign_sm::before {
         content: "\09f3";
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 600;
         margin-right: 3px;
         font-family: initial;
@@ -5176,4 +5187,16 @@ top: 237px;
     
     .product_dlivr_review_btn i::before {
         font-size: 20px;
+    }
+    
+    .reset_text_new_pass {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+    }
+    
+    .login-box-msg-title {
+        font-size: 25px;
+        font-weight: 600;
     }

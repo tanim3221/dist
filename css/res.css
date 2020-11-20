@@ -434,12 +434,8 @@
         padding: 5px;
     }
     
-    .nav-pills .nav-link.active,
-    .nav-pills .show>.nav-link {
-        border-radius: 7px;
-        color: #4285f4 !important;
-        background: #fff;
-        border: 2px solid;
+    .product_show_tab_item_link.active {
+        background: #fff!important;
     }
     
     .mobile-bottom-nav {
@@ -1392,6 +1388,10 @@
         display: none;
     }
     
+    .cart_btn_pro_main.fixed_btn button {
+        background: transparent;
+    }
+    
     .cart_btn_pro_main.fixed_btn {
         position: fixed;
         bottom: 0;
@@ -1402,9 +1402,9 @@
         margin: 0;
         right: 0;
         transition: 0.23s ease all;
-        height: 55px;
+        height: 60px;
         font-weight: 600;
-        background: #fff;
+        background: linear-gradient(to right, #4285f4, #131921);
     }
     
     .product_page_cart_btn {
@@ -1773,7 +1773,7 @@
     }
     
     .search_bar_body_top_btn li a {
-        padding: 7px 10px!important;
+        padding: 5px 10px!important;
         font-size: 12px!important;
     }
     
@@ -2867,4 +2867,20 @@
     
     .nav-item.product_show_tab_item:first-child {
         margin-left: 15px;
+    }
+    
+    .login-box._reset {
+        width: 100%;
+        top: 15px;
+        position: relative;
+        padding: 25px;
+    }
+    
+    .reset_text_new_pass {
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    
+    .login-box-msg-title {
+        font-size: 20px;
     }
