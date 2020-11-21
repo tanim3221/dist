@@ -122,23 +122,6 @@
         display: none;
     }
     
-    #main_search_bar::placeholder {
-        font-size: 13px;
-    }
-    
-    #main_search_bar {
-        width: 100%!important;
-        height: 40px!important;
-    }
-    
-    .fixed-header #main_search_bar {
-        background: #fff;
-    }
-    
-    #main_search_btn {
-        height: 45px!important;
-    }
-    
     .search_bar_body .input-group {
         flex-wrap: unset;
     }
@@ -198,9 +181,10 @@
         width: 100%;
     }
     
-    .place_prive_tag_amnt {
-        position: absolute;
-        right: 20px;
+    .text_delivery_charge {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
     
     .cart_index_body {
@@ -394,13 +378,6 @@
         top: 15px;
         right: 27px;
         background: #fff!important;
-    }
-    
-    .search_bar_body {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        width: 95%;
     }
     
     .card.search_result_body {
@@ -1075,7 +1052,7 @@
     
     #sidebar-btn {
         border: 0;
-        top: 5px;
+        top: 8px;
     }
     
     .top_res_acount_button_welcome {
@@ -1129,33 +1106,12 @@
         box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
     }
     
-    .fixed-header #main_search_bar:focus {
-        border: 0!important;
-    }
-    
-    .search_bar_body {
-        width: 100%;
-        height: 55px;
-        position: fixed;
-        z-index: 10;
-    }
-    
-    .search_bar_body_main {
-        width: 95%;
-        margin: 0 auto;
-    }
-    
     #search_clear {
         position: absolute;
         color: #444;
         right: 25px;
         font-size: 15px;
         z-index: 10;
-    }
-    
-    .fixed-header #main_search_bar {
-        border: 0;
-        font-size: 12px;
     }
     
     .vat_page_tp_review_pro {
@@ -1193,7 +1149,7 @@
     .order_payment___,
     .apply_promo_box_bar {
         padding: 10px 0px !important;
-        font-weight: 600;
+        font-weight: 500;
     }
     
     .ship_title_head__ {
@@ -1219,6 +1175,11 @@
     
     .order_payment___ h5 {
         font-size: 16px;
+        margin: 0;
+    }
+    
+    .category_list_card_body {
+        padding: 10px;
     }
     
     textarea.form-control::placeholder {
@@ -1284,7 +1245,6 @@
     
     .order_summery_write_review_seller {
         margin-top: 15px;
-        border-top: 1px solid #ddd;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -1326,7 +1286,7 @@
     }
     
     .form-group.log_reg_form label {
-        font-size: 12px;
+        font-size: 13px;
     }
     
     .form-group.log_reg_form input::placeholder {
@@ -1879,14 +1839,6 @@
         padding: 12px 12px 12px 50px!important;
     }
     
-    .product_review_user_form,
-    .order_summery_write_review_seller {
-        border: 1px solid #ddd;
-        border-radius: 7px;
-        margin: 6px;
-        padding: 20px 15px;
-    }
-    
     .product_review_user_form_title {
         font-size: 14px;
         font-weight: 600;
@@ -1894,10 +1846,6 @@
     
     .review_card_form_all {
         margin-top: 0 !important;
-    }
-    
-    .order_summery_write_review_title_head {
-        margin-top: 8px;
     }
     
     .review_hr_top,
@@ -2041,7 +1989,7 @@
     }
     
     .mobile-bottom-nav__item .icon.mdi::before {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .order_summery__ {
@@ -2146,12 +2094,12 @@
         background: #f0f2f5;
         border-radius: 40px;
         width: 40px;
-        color: #444;
+        color: #111;
         height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 24px;
+        font-size: 28px;
     }
     
     .mobile-bottom-nav__item:hover {
@@ -2851,8 +2799,18 @@
     .card-body.order_payment_form_var,
     .card-body.order_payment___,
     .card-body.ship_title_head__,
+    .card-body.apply_promo_box_bar,
+    .card-body.cart_summery_info_price,
     .card-body.cart_card_body__ {
         box-shadow: none;
+        margin: 0;
+    }
+    
+    .cart_index_body.main_cart,
+    .cart_index_side.main_cart {
+        margin-top: 15px;
+        margin-bottom: 0px!important;
+        background: #fff;
     }
     
     .deli_class_name_ {
@@ -2911,3 +2869,50 @@
     .nav-item.product_show_tab_item {
         padding: 15px 0px;
     }
+    /* Search bar */
+    
+    #main_search_bar::placeholder {
+        font-size: 13px;
+    }
+    
+    #main_search_bar {
+        width: 100%!important;
+        height: 40px!important;
+    }
+    
+    .fixed-header #main_search_bar {
+        background: #fff;
+    }
+    
+    #main_search_btn {
+        height: 45px!important;
+    }
+    
+    .fixed-header #main_search_bar:focus {
+        border: 0!important;
+    }
+    
+    .fixed-header #main_search_bar {
+        border: 0;
+        font-size: 12px;
+    }
+    
+    .search_bar_body {
+        width: 100%;
+        height: 55px;
+        position: fixed;
+        z-index: 10;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .search_bar_body_wrapper {
+        position: absolute;
+        top: -5px;
+    }
+    
+    .search_bar_body_main {
+        width: 95%;
+        margin: 0 auto;
+    }
+    /* Search bar */
