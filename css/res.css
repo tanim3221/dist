@@ -2906,11 +2906,6 @@
         transform: translate(-50%);
     }
     
-    .search_bar_body_wrapper {
-        position: absolute;
-        top: -5px;
-    }
-    
     .search_bar_body_main {
         width: 95%;
         margin: 0 auto;
