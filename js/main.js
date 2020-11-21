@@ -1976,38 +1976,6 @@
         });
     });
     */
-    $(document).ready(function() {
-        $("[name='face']").click(function() {
-            if ($(this).prop("checked") == true)
-                $('#link_fac').show();
-            else if ($(this).prop("checked") == false)
-                $('#link_fac').hide();
-        });
-        $("[name='link']").click(function() {
-            if ($(this).prop("checked") == true)
-                $('#link_lin').show();
-            else if ($(this).prop("checked") == false)
-                $('#link_lin').hide();
-        });
-        $("[name='yout']").click(function() {
-            if ($(this).prop("checked") == true)
-                $('#link_you').show();
-            else if ($(this).prop("checked") == false)
-                $('#link_you').hide();
-        });
-        $("[name='twit']").click(function() {
-            if ($(this).prop("checked") == true)
-                $('#link_twi').show();
-            else if ($(this).prop("checked") == false)
-                $('#link_twi').hide();
-        });
-        $("[name='inst']").click(function() {
-            if ($(this).prop("checked") == true)
-                $('#link_ins').show();
-            else if ($(this).prop("checked") == false)
-                $('#link_ins').hide();
-        });
-    });
 
     function getStoreOrder() {
         $.ajax({
@@ -2293,3 +2261,26 @@
             }
         })
     }
+
+    // Add social media on store addition
+
+    $(function() {
+        $(document).ready(function() {
+            $(document).on('click', "[name='face']", function(e) {
+                console.log('click');
+                $('#link_fac').toggle();
+            });
+            $(document).on('click', "[name='link']", function(e) {
+                $('#link_lin').toggle();
+            });
+            $(document).on('click', "[name='yout']", function(e) {
+                $('#link_you').toggle();
+            });
+            $(document).on('click', "[name='twit']", function(e) {
+                $('#link_twi').toggle();
+            });
+            $(document).on('click', "[name='inst']", function(e) {
+                $('#link_ins').toggle();
+            });
+        });
+    });
