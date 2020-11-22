@@ -3815,6 +3815,10 @@ top: 237px;
         -webkit-box-shadow: unset!important;
         box-shadow: unset!important;
     }
+    
+    #toast-container>div {
+        border-radius: 7px;
+    }
     /* Order Track Details */
     
     .order-track-details {

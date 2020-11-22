@@ -2911,3 +2911,37 @@
         margin: 0 auto;
     }
     /* Search bar */
+    /* Toastr CSS */
+    
+    #toast-container>.toast-warning,
+    #toast-container>.toast-info,
+    #toast-container>.toast-error,
+    #toast-container>.toast-success {
+        background-size: 16px;
+    }
+    
+    #toast-container {
+        width: 95%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .toast-message {
+        font-size: 13px;
+    }
+    
+    #toast-container>div {
+        width: 100%;
+        border-radius: 7px;
+        margin: 0;
+    }
+    
+    .toast {
+        max-width: 100%;
+    }
+    
+    #toast-container.toast-bottom-center>div {
+        width: 100%;
+        margin-top: 5px;
+    }
+    /* Toastr CSS */
