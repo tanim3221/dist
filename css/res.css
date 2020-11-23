@@ -2966,6 +2966,7 @@
     }
     
     .add_to_cart_product_details_wrapper .close_btn,
+    .cart_window_title_res,
     .add_to_cart_product_details_wrapper .close_btn_wrapper {
         display: block;
     }
