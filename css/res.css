@@ -101,10 +101,6 @@
         padding-top: 0px!important;
     }
     
-    .main_view_pro__ {
-        margin-bottom: 20px;
-    }
-    
     .progress_bar {
         height: 3px;
         z-index: 9999 !important;
@@ -210,7 +206,7 @@
         box-shadow: none;
     }
     
-    .cart_btn_pro_main {
+    .cart_btn_pro_main_res {
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -1345,15 +1341,18 @@
         font-size: 18px;
     }
     
-    .cart_btn_pro_main {
+    #buy_now_btn,
+    #cart_btn_add,
+    .cart_btn_pro_main_res,
+    .product_option_choose_form {
         display: none;
     }
     
-    .cart_btn_pro_main.fixed_btn button {
+    .cart_btn_pro_main_res.fixed_btn button {
         background: transparent;
     }
     
-    .cart_btn_pro_main.fixed_btn {
+    .cart_btn_pro_main_res.fixed_btn {
         position: fixed;
         bottom: 0;
         z-index: 3070;
@@ -1368,14 +1367,14 @@
         background: linear-gradient(to right, #4285f4, #131921);
     }
     
-    .product_page_cart_btn {
+    .product_page_cart_btn_res {
         width: 50%;
         height: 60px;
         font-size: 13px;
         border-radius: 0;
     }
     
-    .cart_btn_pro_main.fixed_btn .product_page_cart_btn {
+    .cart_btn_pro_main_res.fixed_btn .product_page_cart_btn_res {
         position: fixed;
         bottom: 0;
         z-index: 3070;
@@ -1388,7 +1387,7 @@
         font-weight: 600;
     }
     
-    .cart_btn_pro_main.fixed_btn .product_page_cart_btn.buy_now__ {
+    .cart_btn_pro_main_res.fixed_btn .product_page_cart_btn_res.buy_now__ {
         position: fixed;
         bottom: 0;
         z-index: 3070;
@@ -1476,6 +1475,7 @@
     
     .check_cost_ship_wrapper,
     .card_wrong_info_report,
+    .add_to_cart_product_details_card,
     .pro_details_card_body_pro_bottom,
     .delivery_option_info_wrapper,
     .return_warranty_info_wrapper,
@@ -1497,6 +1497,7 @@
     .wrong_info_report_card,
     .return_warranty_info,
     .pro_details_card_pro_bottom,
+    .add_to_cart_product_details_wrapper,
     .others_order_details_card,
     .write_good_review {
         position: fixed;
@@ -2336,6 +2337,7 @@
     }
     
     .check_cost_ship_wrapper .close_btn,
+    .add_to_cart_product_details_wrapper .close_btn,
     .wrong_info_report_card .close_btn {
         border-radius: 0 20px 0 20px;
     }
@@ -2945,3 +2947,25 @@
         margin-top: 5px;
     }
     /* Toastr CSS */
+    
+    #cart_btn_add,
+    #buy_now_btn {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        border-radius: 0;
+    }
+    
+    .add_to_cart_product_details_card {
+        margin-bottom: 50px;
+        padding: 15px !important;
+    }
+    
+    .add_to_cart_product_details_wrapper {
+        display: none;
+    }
+    
+    .add_to_cart_product_details_wrapper .close_btn,
+    .add_to_cart_product_details_wrapper .close_btn_wrapper {
+        display: block;
+    }

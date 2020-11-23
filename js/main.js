@@ -71,7 +71,7 @@
             "onclick": null,
             "showDuration": "300",
             "hideDuration": "1000",
-            "timeOut": "15000",
+            "timeOut": "10000",
             "extendedTimeOut": "1000",
             "showEasing": "swing",
             "hideEasing": "linear",
@@ -992,9 +992,9 @@
 
     $(document).on('scroll', function() {
         if ($(window).scrollTop() <= 100) {
-            $('.cart_btn_pro_main').removeClass('fixed_btn');
+            $('.cart_btn_pro_main_res').removeClass('fixed_btn');
         } else {
-            $('.cart_btn_pro_main').addClass('fixed_btn');
+            $('.cart_btn_pro_main_res').addClass('fixed_btn');
         }
     })
 
@@ -1143,6 +1143,7 @@
         $('.return_warranty_info').hide();
         $('.delivery_option_info').hide();
         $('.wrong_info_report_card').hide();
+        $('.add_to_cart_product_details_wrapper').hide();
         $('.others_order_details_card').hide();
         $('.pro_details_card_pro_bottom').hide();
         $('.home_alert_class_one').hide();
@@ -2284,3 +2285,16 @@
             });
         });
     });
+
+    $(document).on('click', ".product_page_cart_btn_res", function(e) {
+        $('.add_to_cart_product_details_wrapper').show();
+        $('#cart_btn_add').show();
+        $('#buy_now_btn').hide();
+
+    })
+    $(document).on('click', ".product_page_cart_btn_res.buy_now__", function(e) {
+        $('.add_to_cart_product_details_wrapper').show();
+        $('#buy_now_btn').show();
+        $('#cart_btn_add').hide();
+
+    })
