@@ -5280,3 +5280,8 @@ top: 237px;
     .img_cat_view_all {
         width: 100%;
     }
+    
+    .cat_img_view_big img {
+        width: 100%;
+        padding: 0;
+    }
