@@ -5276,3 +5276,7 @@ top: 237px;
     .add_to_cart_product_details_wrapper {
         display: block;
     }
+    
+    .img_cat_view_all {
+        width: 100%;
+    }
