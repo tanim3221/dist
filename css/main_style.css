@@ -3723,6 +3723,7 @@ top: 237px;
     
     .todays_deals_view.card-columns,
     .premium_deals_view.card-columns,
+    .seasonal_fruits_view.card-columns,
     .great_deals_view.card-columns {
         -webkit-column-count: 5;
         -moz-column-count: 5;
@@ -3734,6 +3735,7 @@ top: 237px;
     
     .todays_deals_view a,
     .premium_deals_view a,
+    .seasonal_fruits_view a,
     .big_category_view .card,
     .get_modified_info .card,
     .great_deals_view a {
@@ -3751,6 +3753,7 @@ top: 237px;
     
     .todays_deals_view .card-body,
     .premium_deals_view .card-body,
+    .seasonal_fruits_view .card-body,
     .great_deals_view .card-body {
         padding: 13px;
         border-top: 1px solid #ddd!important;
@@ -3759,6 +3762,7 @@ top: 237px;
     }
     
     .todays_deals_view .card,
+    .seasonal_fruits_view .card,
     .premium_deals_view .card,
     .great_deals_view .card {
         border: 1px solid #ddd!important;
@@ -3766,6 +3770,7 @@ top: 237px;
     
     .todays_deals_view .card-body p,
     .premium_deals_view .card-body p,
+    .seasonal_fruits_view .card-body p,
     .great_deals_view .card-body p {
         margin-bottom: 0px;
     }

@@ -1929,6 +1929,19 @@
     }
     getGreatDeal();
 
+    function getSeasonalDeal() {
+        $.ajax({
+            type: 'POST',
+            url: '../product/get_seasonal_fruits.php',
+            dataType: 'json',
+            success: function(response) {
+                $('.spinner_load').hide();
+                $('.seasonal_fruits_view').html(response);
+            }
+        });
+    }
+    getSeasonalDeal();
+
     function getTodayDeal() {
         $.ajax({
             type: 'POST',
